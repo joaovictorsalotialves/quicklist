@@ -24,6 +24,7 @@
   --title: 700 1.5rem/2 var(--font-family);
   --label: 600 1rem/1.25 var(--font-family);
   --paragraph: 500 1rem/1.25 var(--font-family);
+  --input: 400 1rem/1.4 var(--font-family);
   --link: 500 0.875rem/1 var(--font-family);
 }
 
