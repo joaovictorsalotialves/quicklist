@@ -1,0 +1,9 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-block: 1.5rem 3rem;
+
+  width: 100%;
+}
