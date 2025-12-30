@@ -8,4 +8,7 @@ main {
 
 .container {
   width: 39.1875rem;
+
+  margin-block: 1.5rem;
+  margin-inline: 2rem;
 }

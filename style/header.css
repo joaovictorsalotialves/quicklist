@@ -1,9 +1,19 @@
 header {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 
-  margin-block: 1.5rem 3rem;
+  margin-block: 0 3rem;
 
   width: 100%;
+}
+
+.only-desktop {
+  display: none;
+}
+
+@media (width >=48rem) {
+  .only-desktop {
+    display: flex;
+  }
 }
