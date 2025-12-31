@@ -1,0 +1,25 @@
+ul#list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  list-style: none;
+
+  & li.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 1rem 1rem;
+    border-radius: 0.75rem;
+
+    background-color: var(--background-secondary);
+
+    & .icon-remove {
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+    }
+  }
+}
