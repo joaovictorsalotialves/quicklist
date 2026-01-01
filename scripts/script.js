@@ -3,6 +3,8 @@ const inputNewItem = document.getElementById('new-item')
 
 const list = document.getElementById('list-items')
 
+const remove_alert = document.getElementById('alert')
+
 form.onsubmit = (event) => {
   event.preventDefault()
 
@@ -33,3 +35,23 @@ function addNewItem(value) {
 
   list.appendChild(li)
 }
+
+list.addEventListener('click', function (event) {
+  if (event.target.classList.contains("icon-remove")) {
+    const item = event.target.closest(".item")
+    item.remove()
+
+    remove_alert.classList.remove('hidden')
+
+    setTimeout(() => {
+      remove_alert.classList.add('hidden')
+    }, 15000)
+  }
+})
+
+remove_alert.addEventListener('click', function (event) {
+  console.log(event.target)
+  if (event.target.classList.contains("icone-close")) {
+    remove_alert.classList.add('hidden')
+  }
+})

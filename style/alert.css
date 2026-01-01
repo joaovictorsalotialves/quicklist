@@ -21,7 +21,11 @@
     }
   }
 
-  & #icone-close {
+  & .icone-close {
     cursor: pointer;
   }
+}
+
+.hidden {
+  opacity: 0;
 }
