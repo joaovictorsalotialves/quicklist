@@ -13,6 +13,7 @@
 
   & span {
     font: var(--paragraph);
+    color: var(--content-secondary);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;

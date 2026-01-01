@@ -11,6 +11,8 @@ ul#list-items {
     align-items: center;
     gap: 0.5rem;
 
+    border: 2px solid transparent;
+
     padding: 1rem 1rem;
     border-radius: 0.75rem;
 
@@ -20,6 +22,13 @@ ul#list-items {
       width: 1rem;
       height: 1rem;
       cursor: pointer;
+    }
+  }
+
+  & li.checked {
+    & span {
+      text-decoration-line: line-through;
+      text-decoration-color: var(--content-secondary);
     }
   }
 }
